@@ -2,10 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title> My first web page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first web page</title>
+    <meta name="Description" content="My first web page">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="Keywords" content="my, first, web, page">
+  <meta name="Robots" content="noindex,nofollow">
+  <meta rel="canonical" href="https://www.Demo.com/first-web-page">  
 </head>
+<header>
+    <div id="main header">
+        
+        <h2> My first web page </h2>
+    </div>
+</header>
+
 <body>
+    <ul id="main nav">
     
+        <li><a href="#about">About me</a></li>
+        <br>
+        <li><a href="#services">Services</a></li>
+        <br>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    
+
+    <h3>contact me here</h3>
+   
+
+    <form action="process.php">
+
+        <div>
+            <label for="name">Name</label>
+            <br>
+            <input type="text" id="name">
+        </div>
+        <br>
+        <div><label for="email">email</label>
+            <br>
+            <input type="email" id="email">
+        </div>
+        
+        <br>
+        <div> 
+            <label for="age">age</label>
+            <br>
+            <input type="number" name="age" id="age">
+
+        </div>
+        <br>
+        <div>
+            <label for="massage">Tell me about yourself</label>
+            <br>
+            <textarea name="massage" id="massage" cols="50" rows="10"></textarea> 
+        </div>
+        <br>
+        <div>
+            <input type="checkbox">
+            <label for="i agree">i agree to  the 
+            <a href="https://rooks.co.il/web-development/site-regulations-example/"> terms of Service </a>
+        </label>
+
+        </div>
+        
+    </form>
+    <div id="about">
+        
+    </div>
 </body>
 </html>
