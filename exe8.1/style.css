@@ -1,0 +1,15 @@
+#outer {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    position: relative;
+}
+
+#inner {
+    width: 100px;
+    height: 100px;
+    background-color: #2ecc71;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+}
