@@ -1,54 +1,84 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-}
-
-.greeting-card {
-    width: 400px;
-    padding: 20px;
-    background-color: #fff;
-    border: 2px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-.navbar {
-    background-color: #333;
-    padding: 3px 0;
-    display: flex;
-}
-
-.navbar ul {
-    list-style-type: none;
+*{
     margin: 0;
     padding: 0;
+  
 }
+* ::before,
+* ::after 
 
-.navbar ul li {
-    display: inline;
-}
 
-.navbar ul li a {
-    display: inline-block;
+
+button ,.large{
+    margin: 10px;
     padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
+}
+
+.large-square {
+    background-color: #3498db;
     color: #fff;
+}
+
+.large-round {
+    background-color: #2ecc71;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.large-square-border {
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    color: #e74c3c;
+}
+
+.large-round-border {
+    background-color: transparent;
+    border: 2px solid #f39c12;
+    color: #f39c12;
+    border-radius: 50%;
+}
+
+button, .smaller{
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+
+.smaller .smaller-square, .smaller-round, .smaller-square-border, .smaller-round-border {
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
     text-decoration: none;
 }
 
-.navbar ul li a:hover {
-    background-color: #555;
+.smaller-square {
+    background-color: #3498db;
+    color: #fff;
 }
 
-.quote {
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px;
-    border: 2px solid #ccc;
-    background-color: #f9f9f9;
-    text-align: center;
+.smaller-round {
+    background-color: #2ecc71;
+    color: #fff;
+    border-radius: 50%;
 }
 
+.smaller-square-border {
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    color: #e74c3c;
+}
+
+.smaller-round-border {
+    background-color: transparent;
+    border: 2px solid #f39c12;
+    color: #f39c12;
+    border-radius: 50%;
+}
 
