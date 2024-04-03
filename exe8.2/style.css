@@ -6,8 +6,12 @@
     z-index: -2;
    
 }
-
+.box-title, h4{
+    text-align: center; 
+    padding-top: 2px;
+    color: white;
     
+}
 
 #inner {
     width: 100px;
