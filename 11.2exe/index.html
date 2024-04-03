@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Boxes in a Row</title>
+    <style>
+        *{
+            background-color: bisque;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+        }
+
+        .box {
+            width: 120px;
+            height: 90px;
+           
+            line-height: 100px;
+            color: white;
+            
+            margin: 0 0; 
+        }
+
+        #left-box {
+            background-color: blue;
+        }
+
+        #center-box {
+            background-color: green;
+        }
+
+        #right-box {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="left-box" class="box"></div>
+    <div id="center-box" class="box"></div>
+    <div id="right-box" class="box"></div>
+</body>
+</html>
