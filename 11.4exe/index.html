@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Boxes - Right Alignment</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row-reverse;
+            height: 100vh; 
+            margin: 0; 
+            justify-content: flex-end; 
+            align-items: flex-start; 
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; 
+            align-items: flex-start; 
+            height: 100%;
+            gap: 6rem;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            
+         
+            
+        }
+
+        #top-box {
+            background-color: blue;
+            align-self: flex-end; 
+        }
+
+        #middle-box {
+            background-color: green;
+            align-self: flex-end; 
+        }
+
+        #bottom-box {
+            background-color: red;
+            align-self: flex-end; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="top-box" class="box"></div>
+        <div id="middle-box" class="box"></div>
+        <div id="bottom-box" class="box"></div>
+    </div>
+</body>
+</html>
+
