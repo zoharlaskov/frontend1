@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exploring CSS Units</title>
+<style>
+
+  html {
+    font-size: 16px; 
+  }
+
+
+  .container {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    width: 200px; 
+  }
+
+  .container p {
+    font-size: 1em; 
+  }
+
+  .container.rem p {
+    font-size: 1rem;
+  }
+
+  .container.vw h2 {
+    font-size: 5vw; 
+  }
+</style>
+</head>
+<body>
+ 
+  <div class="container">
+    <h2>Using px and em</h2>
+    <p>This is a paragraph with font size in em units. Change the font size of this container to see how it affects the paragraph.</p>
+  </div>
+
+
+  <div class="container rem">
+    <h2>Using px and rem</h2>
+    <p>This is a paragraph with font size in rem units. Change the root (html) font size to see how it affects the paragraph.</p>
+  </div>
+
+
+  <div class="container vw">
+    <h2>Using vw</h2>
+    <p>This is a header with font size in vw units. Resize the viewport to see how it affects the font size.</p>
+  </div>
+</body>
+</html>
