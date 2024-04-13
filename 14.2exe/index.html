@@ -3,28 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>אנימציה של ריבוע עם צבע שמשתנה</title>
+<title>Simple transition square</title>
 <style>
-  /* עיצוב הריבוע */
+ 
   .square {
     width: 200px;
     height: 200px;
     background-color: blue;
-    position: relative; /* הגדרת מיקום רלטיבי לצורך תזוזה */
-    overflow: hidden; /* הסתרת תוכן שחורג מחוץ לריבוע */
-    transition: background-color 1s; /* החלפת הצבע באנימציה כאשר העכבר יזוז מעל הריבוע */
+    position: relative; 
+    overflow: hidden; 
+    transition: background-color 1s; 
   }
 
-  /* אנימציה של שינוי הצבע */
+ 
   .square::before {
     content: "";
     position: absolute;
     top: 0;
-    left: -100%; /* תחילת הצבע משמאל מחוץ לריבוע */
+    left: -100%; 
     width: 100%;
     height: 100%;
-    background-color: lightblue; /* צבע הרקע המשתנה */
-    transition: left 5s; /* אנימציה של שינוי הצבע מימין לשמאל */
+    background-color: lightblue; 
+    transition: left 5s; 
   }
 
   
