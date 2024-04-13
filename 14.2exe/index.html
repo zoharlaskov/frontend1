@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pseudo Selector Animation</title>
+<style>
+  /* Style for the main box */
+  .main-box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    overflow: hidden; /* Hide overflowing content */
+  }
+
+  /* Style for the pseudo selector */
+  .main-box::after {
+    content: 'z';
+    position: absolute;
+    top: 10;
+    left: 10%;
+    width: 200px;
+    height: 200px;
+    background-color: #e74c3c;
+    transition: transform 0.1s, background-color 0.5s; /* Add transition */
+  }
+
+
+  .main-box:hover::after {
+    transform: translateX(0); 
+    background-color: #27ae60; 
+  }
+</style>
+</head>
+<body>
+  <div class="main-box"></div>
+</body>
+</html>
